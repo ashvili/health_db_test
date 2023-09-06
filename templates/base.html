@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+{% load static %}
+{% load i18n %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+{#    <link rel="stylesheet" href={% static "css/../static/css-bak/bootstrap.min.css" %}>#}
+    <link rel="stylesheet" href={% static "css/bootstrap.css" %}>
+{#    <link rel="stylesheet" href={% static "css/select2.min.css" %}>#}
+    <link rel="stylesheet" href={% static "css/easy_select2.css" %}>
+    <link rel="stylesheet" href={% static "css/main.css" %}>
+
+
+    <title>{% block title %}Тест - Фонд{% endblock %}</title>
+
+    <link rel="shortcut icon" href={% static 'images/favicon.ico' %}
+
+</head>
+<body>
+
+<!-- Pre Header -->
+    <div id="pre-header">
+      <div class="container">
+        <div class="row outer-line ">
+            <div class="col-1 inner-line">
+                <a class="" href="{% url 'main_page:main_page' %}">
+                    <img src={% static "images/logo.png" %} alt=""
+                         width="76" height="75" class="align-content-center">
+                </a>
+            </div>
+          <div class="col-7 inner-line" style="padding: 5px">
+            <span>Фонд помощи детям,<br>
+                нуждающимся в защите</span>
+          </div>
+            {% if user.is_authenticated %}
+            <div class="col-4 inner-line">
+                {% if user.is_authenticated %}
+                    <div class="table" style="display: inline;">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <div class="row" style="padding-bottom: 0;">
+                                    <div class="col">
+                                        <a class="inner-line"  href="{% url "users:profile" user.pk %}">
+{#                                         <strong>{{ user.last_name|title }} {{ user.first_name.0|upper }}.#}
+                                         <strong>{{ user.username }}
+                                         </strong></a>
+                                    </div>
+                                </div>
+{#                                <div class="row" style="padding-top: 0;">#}
+{#                                    <div class="col">#}
+{#                                         <p class="text-start" style="display: inline; ">{% trans user.group_name %}</p>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <p class="text-start" style="display: inline; "><strong>Admin</strong>#}
+{#                                    Администратор#}
+{#                                </p>#}
+                            </div>
+                            <div class="col-8">
+{#                                <a class="inner-line"  href="{% url "users:profile" user.pk %}">#}
+{#                                    <img src="{% static "images/profile.png" %}" width="50" height="40" style="display: inline; padding-right: 0.2vw; padding-left: 0 ">#}
+{#                                </a>#}
+                                <a class="inner-line" href="{% url 'users:logout' %}">
+                                    <img src="{% static "images/exit.png" %}" width="50" height="40" style="display: inline;">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                {% else %}
+{#                    <a href="#">Зарегистрироваться</a>#}
+                {% endif %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+{% if user.is_authenticated %}
+    <nav class="navbar navbar-expand-lg bg-menu static-top">
+      <div class="container">
+{#        <a class="navbar-brand" href="#"><img src="{% static "images/edit.png" %}" width="30" height="30" alt=""></a>#}
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item {% if request.path == '/' %} active {% endif %}">
+              <a class="nav-link" href="{% url 'main_page:main_page' %}" >{%  trans "Главная" %}
+              </a>
+            </li>
+            <li class="nav-item {% if 'patients' in request.path %} active {% endif %}">
+              <a class="nav-link" href="{% url "patients:patient_list" %}">{%  trans "Пациенты" %}</a>
+                 <ul>
+                    <li><a class="nav-link" href="{% url 'patients:patient_list' %}">{%  trans "Пациенты" %}</a></li>
+                    <li><a class="nav-link" href="{% url 'resolutions:resolution_list' %}">{%  trans "Решения" %}</a></li>
+                </ul>
+            </li>
+            <li class="nav-item {% if 'therapy' in request.path or 'surgery' in request.path %} active {% endif %} ">
+                  <a class="nav-link" href="{% url 'surgery:surgery_list' %}">{%  trans "Лечение" %}</a>
+                 <ul>
+                    <li><a class="nav-link" href="{% url 'surgery:surgery_list' %}">{%  trans "Операции" %}</a></li>
+                    <li><a class="nav-link" href="{% url 'therapy:therapy_list' %}">{%  trans "Лечение" %}</a></li>
+                    <li><a class="nav-link" href="{% url 'diagnosis:diagnosis_list' %}">{%  trans "Диагностика" %}</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item {% if 'investment' in request.path %} active {% endif %}">
+              <a class="nav-link" href="{% url 'investment:investment_list' %}">{%  trans "Использование" %}</a>
+            </li>
+            <li class="nav-item {% if 'reports' in request.path %} active {% endif %}">
+              <a class="nav-link" href="{% url 'reports:reports' %}">{%  trans "Отчёты" %}</a>
+            </li>
+            <li class="nav-item {% if 'dicts' in request.path %} active {% endif %}">
+              <a class="nav-link" href="{% url 'dicts:dicts_list' %}">{%  trans "Справочники" %}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+{% endif %}
+
+    <div class="container" style="padding-top: 5vh; padding-bottom: 5vh;">
+{% if user.is_authenticated or 'login' in request.path %}
+        {% block content %}
+
+        {% endblock %}
+{% else %}
+  <p>{%  trans "Необходимо войти в систему" %}</p>
+  <a href="{% url 'users:login' %}">{%  trans "Вход" %}</a> |
+  <a href="{% url 'users:signup' %}">{%  trans "Регистрация" %}</a>
+{% endif %}
+
+    </div>
+
+    <!-- Sub Footer Starts Here -->
+    <div class="sub-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright-text">
+              <p>Copyright &copy; 2023 KP
+
+{#                - Design: <a rel="nofollow" href="#">Asd</a></p>#}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sub Footer Ends Here -->
+
+{%  block script %}
+        <script src={% static 'js/jquery/jquery.js' %}></script>
+        <script src={% static 'js/jquery.init.js' %}></script>
+        <script src={% static "js/bootstrap.min.js" %}></script>
+        <script src={% static "js/bootstrap.bundle.min.js" %}></script>
+        <script src={% static "js/bootstrap-tab.js" %}></script>
+        <script src={% static 'js/init.js' %}></script>
+        <script src={% static 'js/easy_select2.js' %}></script>
+        <script src={% static 'js/select2.js' %}></script>
+{#        <script type="text/javascript" src="{% static 'js/init.js' %}"></script>#}
+{% endblock script %}
+{%  block additional_script %}
+
+
+{% endblock additional_script %}
+</body>
+</html>

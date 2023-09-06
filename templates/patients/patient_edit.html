@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+
+{% block content %}
+
+    <form method="post" >
+        {% if not error is None %}
+            <p class="text-danger">{% trans "Ошибка" %}: {{ error|default_if_none:'' }} </p>
+        {% endif %}
+        <div class="col-5">
+            <p class="text-primary h5" style="padding-bottom: 1vh">
+                {% if object.id %}
+                    {% trans "Пациент" %}: {{ object.fullname }}
+                {% else %}
+                    {% trans "Новый пациент" %}
+                {% endif %}
+            </p>
+        </div>
+            {% crispy form %}
+    </form>
+    {% if object.id %}
+        <div class="row">
+            <a href="{% url 'surgery:create_two'%}?patient_id={{ object.id }}">{% trans "Добавить запись об операции" %}</a>
+        </div>
+        <div class="row">
+            <a href="{% url 'therapy:create_two'%}?patient_id={{ object.id }}">{% trans "Добавить запись о лечении" %}</a>
+        </div>
+        <div class="row">
+            <a href="{% url 'diagnosis:create_two'%}?patient_id={{ object.id }}">{% trans "Добавить запись о диагностике" %}</a>
+        </div>
+        {% include 'patients/patient_resolution.html' %}
+        {% include 'patients/patient_therapy_list.html' %}
+        {% include 'patients/patient_surgery_list.html' %}
+        {% include 'patients/patient_diagnosis_list.html' %}
+    {% endif %}
+{% endblock %}
+
+{% block additional_script %}
+    <script>
+        $("#id_etrap").change(function () {
+            var url = "{% url 'dicts:load_cities' %}";
+            var etrapId = $(this).val();
+            $.ajax({
+                url: url,
+                data: {
+                    'etrap': etrapId
+                },
+                success: function (data) {
+                    $("#id_city").html("");
+                    for (var i = 0; i < data.length; i++) {
+                        var option = new Option(data[i].name, data[i].id);
+                        $("#id_city").append(option);
+                    }
+                }
+            });
+        });
+        </script>
+{% endblock %}

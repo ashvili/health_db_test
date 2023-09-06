@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+
+{% block content %}
+{% if user.is_authenticated %}
+
+    <form method="post" >
+        {% if not error is None %}
+            <p class="text-danger">{% trans "Ошибка" %}: {{ error|default_if_none:'' }} </p>
+        {% endif %}
+        <div class="col-5">
+            <p class="text-primary h5" style="padding-bottom: 1vh">
+                {% if object.id %}
+                    {% trans "Пациент" %}: {{ object.fullname }}
+                {% else %}
+                    {% trans "Новый пациент" %}
+                {% endif %}
+            </p>
+        </div>
+            {% crispy form %}
+    </form>
+
+{% else %}
+  <p>{% trans "Необходимо войти в систему" %}</p>
+  <a href="{% url 'users:login' %}">{% trans "Вход" %}</a> |
+  <a href="{% url 'users:signup' %}">{% trans "Регистрация" %}</a>
+{% endif %}
+{% endblock %}

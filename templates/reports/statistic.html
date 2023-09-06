@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+{#    <div class="card card-body" style="margin-bottom: 2vh;">#}
+{#        <div class="row">#}
+{#            {% crispy form %}#}
+{#        </div>#}
+{#    </div>#}
+    <h4 class="text-primary">{{ title }}</h4>
+
+    <div class="row">
+    <div class="card">
+        <div class="card-header">
+            <div class="row">
+               <div class="col h4 text-primary">{% trans "Добавлено новых записей" %}</div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="col">
+                <table class="table table-bordered border-primary">
+                    <thead class="table-active">
+                        <th>{% trans "Пациентов" %}</th>
+                        <th>{% trans "Решений" %}</th>
+                        <th>{% trans "Операций" %}</th>
+                        <th>{% trans "Лечение" %}</th>
+                        <th>{% trans "Диагностика" %}</th>
+                    </thead>
+                    <tbody >
+                        <tr>
+                            <td class="text-end">{{ add_patient }}</td>
+                            <td class="text-end">{{ add_resolution }}</td>
+                            <td class="text-end">{{ add_surgery }}</td>
+                            <td class="text-end">{{ add_therapy }}</td>
+                            <td class="text-end">{{ add_diagnosis }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <div class="row">
+                <div class="col h4 text-primary">{% trans "Выполнено за счёт фонда" %}</div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <table class="table table-bordered border-primary">
+                        <thead class="table-active">
+                            <th></th>
+                            <th>{% trans "Всего" %}</th>
+                            <th>{% trans "Операций" %}</th>
+                            <th>{% trans "Лечение" %}</th>
+                            <th>{% trans "Диагностика" %}</th>
+                        </thead>
+                        <tbody >
+                            <tr>
+                                <th>Кол-во</th>
+                                <td class="text-black text-end">{{ total.count|default_if_none:'0'|floatformat:0 }}</td>
+                                <td class="text-end">{{ total_surgery.count|default_if_none:'0'|floatformat:0 }}</td>
+                                <td class="text-end">{{ total_therapy.count|default_if_none:'0'|floatformat:0 }}</td>
+                                <td class="text-end">{{ total_diagnosis.count|default_if_none:'0'|floatformat:0 }}</td>
+                            </tr>
+                            <tr class="table-active">
+                                <th>Сумма</th>
+                                <td class="text-dark text-end">{{ total.sum|floatformat:2|default_if_none:'0.0' }}</td>
+                                <td class="text-end">{{ total_surgery.sum|default_if_none:'0.0'|floatformat:2 }}</td>
+                                <td class="text-end">{{ total_therapy.sum|default_if_none:'0.0'|floatformat:2 }}</td>
+                                <td class="text-end">{{ total_diagnosis.sum|default_if_none:'0.0'|floatformat:2 }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+{% block additional_script %}
+    <script src={% static 'js/search_utils.js' %}></script>
+{% endblock %}

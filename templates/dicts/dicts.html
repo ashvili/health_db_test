@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+
+{% block content %}
+    <h5 class="text-primary">{% trans "Список справочников" %}</h5>
+    <ul>
+    <li><a href="{% url 'dicts:etrap_list' %}">{% trans "Велаяты (города)" %}</a></li>
+    <li><a href="{% url 'dicts:city_list' %}">{% trans "Этрапы (города)" %}</a></li>
+    <li><a href="{% url 'dicts:education_list' %}">{% trans "Учебные заведения" %}</a></li>
+    <li><a href="{% url 'dicts:organization_list' %}">{% trans "Организации" %}</a></li>
+    <li><a href="{% url 'dicts:hospital_list' %}">{% trans "Больницы" %}</a></li>
+    <li><a href="{% url 'dicts:doctor_list' %}">{% trans "Врачи" %}</a></li>
+    <li><a href="{% url 'dicts:surgery_type_list' %}">{% trans "Типы операций" %}</a></li>
+    <li><a href="{% url 'dicts:unit_list' %}">{% trans "Единицы измерения" %}</a></li>
+    </ul>
+
+{% endblock %}

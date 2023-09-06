@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+
+<div class="container " style="padding-top: 2vh">
+
+    <div class="table card">
+        <div class="card-header">
+            <h4 class="h4 text-primary"> {{ title }} ({{ investment_list.count|default_if_none:'0' }})</h4>
+        </div>
+        <div class="card-body">
+        <div class="row" style="padding-bottom: 1vh;">
+            <div class="col-1">
+                <div class="col btn btn-light">
+                    <a class="bg-transparent text-decoration-none text-black"
+                       href="{% url 'investment:create' %}">
+                        <img src="{% static "images/add_blue.png" %}" height="36" width="36" alt="">
+                    </a>
+                </div>
+            </div>
+            {% include 'search_panel.html' %}
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                        <div class="table-responsive card card-body">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">{% trans "Источник" %}</th>
+                                        <th scope="col">{% trans "Целевая организация" %}</th>
+                                        <th scope="col">{% trans "Кол-во детей" %}</th>
+                                        <th scope="col">{% trans "Дата поступления" %}</th>
+                                        <th scope="col">{% trans "Наименование товара / услуги" %}</th>
+                                        <th scope="col">{% trans "Ед. изм." %}</th>
+                                        <th scope="col">{% trans "Кол-во" %}</th>
+                                        <th scope="col">{% trans "Стоимость" %}</th>
+                                        <th scope="col">{% trans "Поставщик" %}</th>
+                                        <th scope="col">{% trans "Добавлено" %}</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for record in investment_list %}
+                                    <tr class="pointer" onclick="document.location = '{% url 'investment:investment_edit' record.id %}';">
+
+                                        <td  >
+                                            {{ record.source }}
+                                        </td>
+                                        <td >
+                                            {{ record.destination }}
+                                        </td>
+                                        <td >
+                                            {{ record.child_count }}
+                                        </td>
+                                        <td >{{ record.investment_date|date:'d-m-Y' }}</td>
+                                        <td >{{ record.investment_name }}</td>
+                                        <td >{{ record.unit }}</td>
+                                        <td >{{ record.count }}</td>
+                                        <td >{{ record.price_man }}</td>
+                                        <td >{{ record.investor }}</td>
+                                        <td scope="row" >
+                                                {{ record.created_at|date:'d-m-Y' }}
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                            {% include 'pagination.html' %}
+                        </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+{% endblock %}
+
+{% block additional_script %}
+    <script src={% static 'js/search_utils.js' %}></script>
+{% endblock %}

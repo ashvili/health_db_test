@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+
+
+{% block content %}
+
+    <div class="card">
+        <div class="card-header"><h4 class="text-primary">{{ title }}</h4></div>
+        <div class="card-body">
+            {% crispy form %}
+        </div>
+    </div>
+{% endblock %}s
+
+{% block additional_script %}
+    <script src={% static 'js/search_utils.js' %}></script>
+{% endblock %}

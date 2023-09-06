@@ -1,0 +1,48 @@
+{% load i18n %}
+{% if resolution %}
+<div class="container " style="padding-top: 2vh">
+
+    <div class="table">
+
+        <div class="row">
+            <div class="col">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="h5 text-primary"> {% trans "Решение" %} </h5>
+                    </div>
+                    <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">{% trans "Фамилия" %}</th>
+                                    <th scope="col">{% trans "Имя" %}</th>
+                                    <th scope="col">{% trans "Дата поступления" %}</th>
+                                    <th scope="col">{% trans "Дата выдачи решения" %}</th>
+                                    <th scope="col">{% trans "Дата свид. о рожд." %}</th>
+                                    <th scope="col">{% trans "Добавлено" %}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="pointer" onclick="document.location = '{% url 'resolutions:resolution_edit' resolution.id %}';">
+
+                                    <td >{{ resolution.lastname|default_if_none:'' }}</td>
+                                    <td >{{ resolution.resolution_name|default_if_none:'' }}</td>
+                                    <td >{{ resolution.income_date|date:'d-m-Y' }}</td>
+                                    <td >{{ resolution.resolution_date|date:'d-m-Y' }}</td>
+                                    <td >{{ resolution.birth_certificate_date|date:'d-m-Y' }}</td>
+                                    <td > {{ resolution.created_at|date:'d-m-Y H:i' }} </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endif %}

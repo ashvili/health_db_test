@@ -1,0 +1,30 @@
+{% load i18n %}
+        <div class="row" style="padding-bottom: 1vh;">
+            <a class="col btn
+                      {% if 'surgery' in request.path  %} btn-primary {% else %} btn-outline-secondary {% endif %}
+                      text-decoration-none text-black-50 fw-bold" style="margin: 5px"
+                        href="{% url 'surgery:surgery_list' %}">
+                {% trans "Операции" %}
+                {% if surgery_list %}
+                    ({{ surgery_list.count|default_if_none:'0' }})
+                {% endif %}
+            </a>
+            <a class="col btn
+                      {% if 'therapy' in request.path  %} btn-primary {% else %} btn-outline-secondary {% endif %}
+                      text-decoration-none text-black-50 fw-bold" style="margin: 5px"
+                        href="{% url 'therapy:therapy_list' %}">
+                {% trans "Лечение" %}
+                {% if therapy_list %}
+                    ({{ therapy_list.count|default_if_none:'0' }})
+                {% endif %}
+            </a>
+            <a class="col btn
+                      {% if 'diagnosis' in request.path  %} btn-primary {% else %} btn-outline-secondary {% endif %}
+                      text-decoration-none text-black-50 fw-bold" style="margin: 5px"
+                        href="{% url 'diagnosis:diagnosis_list' %}">
+                {% trans "Диагностика" %}
+                {% if diagnosis_list %}
+                    ({{ diagnosis_list.count|default_if_none:'0' }})
+                {% endif %}
+            </a>
+        </div>

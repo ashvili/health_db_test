@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+
+{% block content %}
+    <div class="row">
+        <div class="col-4">
+            {% include "reports/info.html" %}
+        </div>
+{#        <div class="col">#}
+{#            {% include "main_page/find_form.html" %}#}
+{#        </div>#}
+        <div class="col-4">
+            {% include "main_page/links.html" %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            {% include "main_page/last_records.html" %}
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block additional_script %}
+<script>
+    var link_surgery_total = document.getElementsById("id_link_surgery_total");
+    link_surgery_total.addEventListener("click", function(event) {
+        event.preventDefault();
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', {% url 'surgery:surgery_list' %});
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                console.log(xhr.responseText);
+            }
+        };
+        var params = 'date_start=2023-09-01&date_end=2023-09-31&etrap=-1';
+        xhr.send(params);
+    });
+
+    var link_surgery_year = document.getElementsById("id_link_surgery_year");
+    link_surgery_year.addEventListener("click", function(event) {
+        event.preventDefault();
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', link_surgery_year.href);
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                console.log(xhr.responseText);
+            }
+        };
+        var params = 'date_start={{ start_year }}&date_end={{ end_year }}&etrap=-1';
+        xhr.send(params);
+    });
+</script>
+{% endblock %}

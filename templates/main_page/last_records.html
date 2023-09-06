@@ -1,0 +1,33 @@
+{% load i18n %}
+
+<div class="container" style="padding-top: 2vh">
+    <div class="card">
+        <div class="card-header">
+            <h5 class="h5 text-primary"> Последние записи </h5>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">{% trans "Добавлено" %}</th>
+                        <th scope="col">{% trans "Тип записи" %}</th>
+                        <th scope="col">{% trans "Дата события" %}</th>
+                        <th scope="col">{% trans "Дополнительно" %}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for record in patient_events %}
+                    <tr class="pointer" onclick="document.location = '{{ record.link }}'">
+                        <th scope="row" >{{forloop.counter}}</th>
+                        <td >{{ record.created_at|date:'d-m-Y H:i' }}</td>
+                        <td >{{ record.event_name }}</td>
+                        <td >{{ record.event_date|date:'d-m-Y' }}</td>
+                        <td >{{ record.description }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

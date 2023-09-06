@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+
+<div class="container" style="padding-top: 2vh">
+    <div class="table">
+        {% include 'patient_menu.html' %}
+
+        <div class="row" style="padding-bottom: 1vh;">
+            <div class="col-1">
+                <div class="col btn btn-light">
+                    <a class="bg-transparent text-decoration-none text-black"
+                       href="{% url 'resolutions:resolution_create' %}">
+                        <img src="{% static "images/add_blue.png" %}" height="36" width="36" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-10">
+                <form method="post">
+                    {% crispy form %}
+                </form>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                <div class="card">
+{#                    <div class="card-header">#}
+{#                        <h5 class="h5 text-primary"> {% trans "Решения" %} </h5>#}
+{#                    </div>#}
+                    <div class="card-body">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">{% trans "Фамилия ребенка" %}</th>
+                                    <th scope="col">{% trans "Имя по решению" %}</th>
+                                    <th scope="col">{% trans "Дата рождения" %}</th>
+                                    <th scope="col">{% trans "Пол" %}</th>
+                                    <th scope="col">{% trans "Дата поступления" %}</th>
+                                    <th scope="col">{% trans "Дата выдачи решения" %}</th>
+                                    <th scope="col">{% trans "Дата свид. о рожд." %}</th>
+                                    <th scope="col">{% trans "Добавлено" %}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for resolution in resolution_list %}
+                                <tr class="pointer" onclick="document.location = '{% url 'resolutions:resolution_edit' resolution.id %}';">
+                                    <td scope="row" >{{ resolution.lastname }}</td>
+                                    <td >{{ resolution.resolution_name|default_if_none:'' }}</td>
+                                    <td >
+                                            {{ resolution.date_birthday|date:'d-m-Y' }}
+                                    </td>
+                                    <td >{{ resolution.sex.name|default_if_none:'' }}</td>
+                                    <td >{{ resolution.income_date|date:'d-m-Y' }}</td>
+                                    <td >{{ resolution.resolution_date|date:'d-m-Y' }}</td>
+                                    <td >{{ resolution.birth_certificate_date|date:'d-m-Y' }}</td>
+                                    <td >{{ resolution.created_at|date:'d-m-Y' }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                        {% include 'pagination.html' %}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+{% endblock %}
+

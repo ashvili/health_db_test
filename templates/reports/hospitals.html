@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+{#    <div class="card card-body" style="margin-bottom: 2vh;">#}
+{#        <div class="row">#}
+{#            {% crispy form %}#}
+{#        </div>#}
+{#    </div>#}
+    <h4 class="text-primary">{{ title }}</h4>
+    <div class="row">
+    <div class="card">
+        <div class="card-header">
+            <div class="card-body">
+                <div class="col">
+                    <table class="table table-bordered border-primary">
+                        <thead class="table-primary border-primary">
+                            <th>#</th>
+                            <th>{% trans "Больница" %}</th>
+                            <th>{% trans "Кол-во событий" %}</th>
+                            <th>{% trans "Сумма" %}</th>
+                        </thead>
+                        <tbody >
+                        {% for record in object_list %}
+                            <tr>
+                                <th >{{ forloop.counter }}</th>
+                                <td class="text-end">{{ record.hospital__name_2 }}</td>
+                                <td class="text-end">{{ record.count }}</td>
+                                <td class="text-end">{{ record.sum }}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                        <tfoot>
+                            <tr class="table-primary border-primary">
+                                <td class="text-center fw-bolder">{% trans "Итого" %}</td>
+                                <td class="text-end fw-bolder">{{ total.hospital_count }}</td>
+                                <td class="text-end fw-bolder">{{ total.count }}</td>
+                                <td class="text-end fw-bolder">{{ total.sum }}</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+{% block additional_script %}
+    <script src={% static 'js/search_utils.js' %}></script>
+{% endblock %}

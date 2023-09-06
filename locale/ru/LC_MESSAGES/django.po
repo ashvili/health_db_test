@@ -1,0 +1,2153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-06 16:55+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\diagnosis\forms.py:16 .\diagnosis\forms.py:17 .\diagnosis\forms.py:18
+#: .\diagnosis\forms.py:153 .\diagnosis\forms.py:154 .\diagnosis\forms.py:155
+#: .\surgery\forms.py:16 .\surgery\forms.py:17 .\surgery\forms.py:18
+#: .\surgery\forms.py:230 .\surgery\forms.py:231 .\surgery\forms.py:232
+#: .\templates\diagnosis\diagnosis_list.html:40
+#: .\templates\patients\patient_diagnosis_list.html:18
+#: .\templates\patients\patient_surgery_list.html:20
+#: .\templates\patients\patient_therapy_list.html:19
+#: .\templates\surgery\surgery_list.html:41
+#: .\templates\therapy\therapy_list.html:41 .\therapy\forms.py:16
+#: .\therapy\forms.py:17 .\therapy\forms.py:18 .\therapy\forms.py:180
+#: .\therapy\forms.py:181 .\therapy\forms.py:182
+msgid "Диагноз"
+msgstr ""
+
+#: .\diagnosis\forms.py:21 .\diagnosis\forms.py:24 .\diagnosis\forms.py:27
+#: .\diagnosis\forms.py:181 .\diagnosis\forms.py:184 .\diagnosis\forms.py:187
+#: .\templates\diagnosis\diagnosis_list.html:44
+#: .\templates\patients\patient_diagnosis_list.html:22
+msgid "Проведенные мероприятия"
+msgstr ""
+
+#: .\diagnosis\forms.py:33 .\diagnosis\forms.py:160
+msgid "Больница, проводящая диагностику"
+msgstr ""
+
+#: .\diagnosis\forms.py:40 .\diagnosis\forms.py:167 .\surgery\forms.py:56
+#: .\surgery\forms.py:271 .\therapy\forms.py:49 .\therapy\forms.py:199
+msgid "Дата выписки"
+msgstr ""
+
+#: .\diagnosis\forms.py:44 .\diagnosis\forms.py:47 .\diagnosis\forms.py:50
+#: .\diagnosis\forms.py:171 .\diagnosis\forms.py:174 .\diagnosis\forms.py:177
+msgid "Осматриваюший врач"
+msgstr ""
+
+#: .\diagnosis\forms.py:54 .\diagnosis\forms.py:191 .\investment\forms.py:31
+#: .\surgery\forms.py:98 .\surgery\forms.py:313
+#: .\templates\diagnosis\diagnosis_list.html:45
+#: .\templates\investment\investment_list.html:42
+#: .\templates\patients\patient_diagnosis_list.html:23 .\therapy\forms.py:73
+#: .\therapy\forms.py:223
+msgid "Стоимость"
+msgstr ""
+
+#: .\diagnosis\forms.py:64 .\diagnosis\forms.py:246 .\dicts\forms.py:24
+#: .\dicts\forms.py:64 .\dicts\forms.py:111 .\dicts\forms.py:158
+#: .\dicts\forms.py:206 .\dicts\forms.py:262 .\dicts\forms.py:309
+#: .\dicts\forms.py:346 .\investment\forms.py:69 .\patients\forms.py:64
+#: .\patients\forms.py:140 .\resolution\forms.py:82 .\surgery\forms.py:124
+#: .\therapy\forms.py:95 .\users\forms.py:29
+msgid "Туркменский"
+msgstr ""
+
+#: .\diagnosis\forms.py:73 .\diagnosis\forms.py:253 .\dicts\forms.py:27
+#: .\dicts\forms.py:67 .\dicts\forms.py:115 .\dicts\forms.py:161
+#: .\dicts\forms.py:210 .\dicts\forms.py:265 .\dicts\forms.py:312
+#: .\dicts\forms.py:349 .\investment\forms.py:92 .\patients\forms.py:77
+#: .\patients\forms.py:152 .\resolution\forms.py:103 .\surgery\forms.py:151
+#: .\therapy\forms.py:115 .\users\forms.py:28
+msgid "Русский"
+msgstr ""
+
+#: .\diagnosis\forms.py:88 .\diagnosis\forms.py:270 .\dicts\forms.py:37
+#: .\dicts\forms.py:76 .\dicts\forms.py:128 .\dicts\forms.py:171
+#: .\dicts\forms.py:223 .\dicts\forms.py:281 .\dicts\forms.py:321
+#: .\dicts\forms.py:358 .\investment\forms.py:116 .\patients\forms.py:87
+#: .\patients\forms.py:163 .\resolution\forms.py:113 .\surgery\forms.py:177
+#: .\templates\users\password_change.html:14 .\templates\users\signup.html:13
+#: .\therapy\forms.py:131 .\users\forms.py:49
+msgid "Сохранить"
+msgstr ""
+
+#: .\diagnosis\forms.py:94 .\diagnosis\forms.py:276 .\dicts\forms.py:43
+#: .\dicts\forms.py:82 .\dicts\forms.py:134 .\dicts\forms.py:177
+#: .\dicts\forms.py:229 .\dicts\forms.py:287 .\dicts\forms.py:327
+#: .\dicts\forms.py:364 .\investment\forms.py:122 .\patients\forms.py:93
+#: .\patients\forms.py:169 .\resolution\forms.py:114 .\surgery\forms.py:183
+#: .\therapy\forms.py:137 .\users\forms.py:50
+msgid "Назад"
+msgstr ""
+
+#: .\diagnosis\forms.py:196 .\diagnosis\forms.py:199 .\diagnosis\forms.py:202
+#: .\surgery\forms.py:318 .\surgery\forms.py:321 .\surgery\forms.py:324
+#: .\templates\main_page\last_records.html:16
+msgid "Дополнительно"
+msgstr ""
+
+#: .\diagnosis\forms.py:284 .\diagnosis\forms.py:285 .\resolution\forms.py:25
+#: .\surgery\forms.py:356 .\surgery\forms.py:357 .\templates\create_one.html:16
+#: .\templates\create_two.html:13 .\templates\diagnosis\create_two.html:10
+#: .\templates\patients\patient_edit.html:15
+#: .\templates\surgery\create_two.html:11
+#: .\templates\therapy\create_two.html:11 .\therapy\forms.py:263
+#: .\therapy\forms.py:264
+msgid "Пациент"
+msgstr ""
+
+#: .\diagnosis\forms.py:287 .\diagnosis\forms.py:288 .\surgery\forms.py:359
+#: .\surgery\forms.py:360 .\templates\diagnosis\diagnosis_list.html:43
+#: .\templates\patients\patient_diagnosis_list.html:21
+#: .\templates\therapy\therapy_list.html:44 .\therapy\forms.py:266
+#: .\therapy\forms.py:267
+msgid "Врач"
+msgstr ""
+
+#: .\diagnosis\forms.py:292 .\investment\forms.py:145 .\reports\forms.py:21
+#: .\surgery\forms.py:364 .\therapy\forms.py:271
+msgid "Начало"
+msgstr ""
+
+#: .\diagnosis\forms.py:298 .\investment\forms.py:151 .\reports\forms.py:26
+#: .\surgery\forms.py:370 .\therapy\forms.py:277
+msgid "Конец"
+msgstr ""
+
+#: .\diagnosis\forms.py:303 .\therapy\forms.py:282
+msgid "Период (дата выписки)"
+msgstr ""
+
+#: .\diagnosis\forms.py:308 .\dicts\forms.py:252 .\surgery\forms.py:386
+#: .\templates\diagnosis\diagnosis_list.html:41
+#: .\templates\patients\patient_diagnosis_list.html:19
+#: .\templates\patients\patient_therapy_list.html:20
+#: .\templates\reports\hospitals.html:21 .\therapy\forms.py:187
+msgid "Больница"
+msgstr ""
+
+#: .\diagnosis\forms.py:333 .\investment\forms.py:173 .\patients\forms.py:203
+#: .\resolution\forms.py:143 .\surgery\forms.py:412
+#: .\templates\main_page\find_form.html:22 .\therapy\forms.py:312
+msgid "Найти"
+msgstr ""
+
+#: .\diagnosis\views.py:154 .\diagnosis\views.py:186 .\templates\base.html:107
+#: .\templates\diagnosis\create_two.html:8
+#: .\templates\patients\patient_diagnosis_list.html:10
+#: .\templates\patients\patient_therapy_list.html:11
+#: .\templates\reports\statistic.html:29 .\templates\reports\statistic.html:61
+#: .\templates\reports\statistic_by_month.html:23
+#: .\templates\reports\statistic_by_velayat.html:23
+#: .\templates\therapy_menu.html:25
+msgid "Диагностика"
+msgstr ""
+
+#: .\dicts\forms.py:15 .\dicts\forms.py:16 .\dicts\forms.py:17
+#: .\dicts\forms.py:56 .\dicts\forms.py:57 .\dicts\forms.py:58
+#: .\dicts\forms.py:94 .\dicts\forms.py:95 .\dicts\forms.py:96
+#: .\dicts\forms.py:148 .\dicts\forms.py:149 .\dicts\forms.py:150
+#: .\dicts\forms.py:189 .\dicts\forms.py:190 .\dicts\forms.py:191
+#: .\dicts\forms.py:301 .\dicts\forms.py:302 .\dicts\forms.py:303
+#: .\dicts\forms.py:338 .\dicts\forms.py:339 .\dicts\forms.py:340
+msgid "Название"
+msgstr ""
+
+#: .\dicts\forms.py:18
+msgid "Этрап"
+msgstr ""
+
+#: .\dicts\forms.py:38 .\dicts\forms.py:77 .\dicts\forms.py:129
+#: .\dicts\forms.py:172 .\dicts\forms.py:224 .\dicts\forms.py:282
+#: .\dicts\forms.py:322 .\dicts\forms.py:359
+#: .\templates\dicts\city_confirm_delete.html:8
+#: .\templates\patients\patient_confirm_delete.html:9
+msgid "Удалить"
+msgstr ""
+
+#: .\dicts\forms.py:97 .\dicts\forms.py:99 .\dicts\forms.py:101
+#: .\dicts\forms.py:192 .\dicts\forms.py:194 .\dicts\forms.py:196
+#: .\patients\forms.py:25 .\patients\forms.py:26 .\patients\forms.py:27
+msgid "Адрес"
+msgstr ""
+
+#: .\dicts\forms.py:103 .\dicts\forms.py:198 .\dicts\views.py:96
+#: .\patients\forms.py:30 .\patients\forms.py:183 .\reports\forms.py:31
+msgid "Велаят/город"
+msgstr ""
+
+#: .\dicts\forms.py:104 .\dicts\forms.py:199 .\dicts\views.py:48
+#: .\patients\forms.py:34
+msgid "Этрап/город"
+msgstr ""
+
+#: .\dicts\forms.py:151
+msgid "Получатель"
+msgstr ""
+
+#: .\dicts\forms.py:244 .\dicts\forms.py:245 .\dicts\forms.py:246
+msgid "Имя Фамилия"
+msgstr ""
+
+#: .\dicts\forms.py:255 .\patients\forms.py:37 .\resolution\forms.py:37
+#: .\templates\resolution\resolution_list.html:44
+msgid "Пол"
+msgstr ""
+
+#: .\dicts\views.py:37
+msgid "Список этрапов (городов)"
+msgstr ""
+
+#: .\dicts\views.py:71 .\dicts\views.py:118 .\dicts\views.py:166
+#: .\dicts\views.py:214 .\dicts\views.py:262 .\dicts\views.py:310
+#: .\dicts\views.py:357 .\dicts\views.py:404
+msgid "Ошибка при удалении: %(e)"
+msgstr ""
+
+#: .\dicts\views.py:85
+msgid "Список велаятов (городов)"
+msgstr ""
+
+#: .\dicts\views.py:132
+msgid "Список учебных заведений"
+msgstr ""
+
+#: .\dicts\views.py:143 .\templates\diagnosis\diagnosis_list.html:37
+#: .\templates\patients\patient_list.html:39
+#: .\templates\surgery\surgery_list.html:37
+#: .\templates\therapy\therapy_list.html:38
+msgid "Учебное заведение"
+msgstr ""
+
+#: .\dicts\views.py:180
+msgid "Список организаций/предпринимателей"
+msgstr ""
+
+#: .\dicts\views.py:191
+msgid "Организация / поставщик"
+msgstr ""
+
+#: .\dicts\views.py:228
+msgid "Список медицинских учреждений"
+msgstr ""
+
+#: .\dicts\views.py:239
+msgid "Медицинское учреждение"
+msgstr ""
+
+#: .\dicts\views.py:276
+msgid "Список врачей"
+msgstr ""
+
+#: .\dicts\views.py:287
+msgid "Врач / медицинский персонал"
+msgstr ""
+
+#: .\dicts\views.py:324 .\templates\dicts\dicts.html:16
+msgid "Единицы измерения"
+msgstr ""
+
+#: .\dicts\views.py:335
+msgid "Единица измерения"
+msgstr ""
+
+#: .\dicts\views.py:371 .\templates\dicts\dicts.html:15
+msgid "Типы операций"
+msgstr ""
+
+#: .\dicts\views.py:382 .\surgery\forms.py:23 .\surgery\forms.py:251
+#: .\surgery\forms.py:380 .\templates\surgery\surgery_list.html:40
+msgid "Тип операции"
+msgstr ""
+
+#: .\health\settings.py:212
+msgid "Выберите период"
+msgstr ""
+
+#: .\health\settings.py:213
+msgid "1 день"
+msgstr ""
+
+#: .\health\settings.py:214
+msgid "1 неделя"
+msgstr ""
+
+#: .\health\settings.py:215
+msgid "текущий месяц"
+msgstr ""
+
+#: .\health\settings.py:216
+msgid "текущий год"
+msgstr ""
+
+#: .\investment\forms.py:15 .\investment\forms.py:16 .\investment\forms.py:17
+msgid "Куда направляется помощь"
+msgstr ""
+
+#: .\investment\forms.py:19 .\investment\forms.py:20 .\investment\forms.py:21
+#: .\templates\investment\investment_list.html:39
+msgid "Наименование товара / услуги"
+msgstr ""
+
+#: .\investment\forms.py:23 .\templates\investment\investment_list.html:37
+msgid "Кол-во детей"
+msgstr ""
+
+#: .\investment\forms.py:38 .\templates\investment\investment_list.html:35
+msgid "Источник"
+msgstr ""
+
+#: .\investment\forms.py:47 .\investment\forms.py:48 .\investment\forms.py:49
+#: .\investment\forms.py:140 .\investment\forms.py:141
+#: .\templates\investment\investment_list.html:43
+msgid "Поставщик"
+msgstr ""
+
+#: .\investment\forms.py:54
+msgid "Дата"
+msgstr ""
+
+#: .\investment\forms.py:59
+msgid "Ед. измерения"
+msgstr ""
+
+#: .\investment\forms.py:156
+msgid "Период (дата поступления)"
+msgstr ""
+
+#: .\investment\views.py:20
+msgid "Использование средств фонда"
+msgstr ""
+
+#: .\patients\forms.py:19 .\patients\forms.py:104 .\resolution\forms.py:34
+#: .\templates\diagnosis\diagnosis_list.html:39
+#: .\templates\patients\patient_list.html:41
+#: .\templates\resolution\resolution_list.html:43
+#: .\templates\surgery\surgery_list.html:39
+#: .\templates\therapy\therapy_list.html:40
+msgid "Дата рождения"
+msgstr ""
+
+#: .\patients\forms.py:21 .\patients\forms.py:22 .\patients\forms.py:23
+#: .\patients\forms.py:106 .\patients\forms.py:107 .\patients\forms.py:108
+#: .\templates\patients\patient_resolution.html:20 .\users\forms.py:14
+msgid "Имя"
+msgstr ""
+
+#: .\patients\forms.py:40 .\patients\forms.py:120
+msgid "Уч. заведение"
+msgstr ""
+
+#: .\patients\forms.py:115
+msgid "Город"
+msgstr ""
+
+#: .\patients\forms.py:176 .\patients\forms.py:189 .\resolution\forms.py:121
+#: .\resolution\forms.py:130
+msgid "Год рождения"
+msgstr ""
+
+#: .\patients\forms.py:179
+msgid "Имя пациента"
+msgstr ""
+
+#: .\reports\forms.py:36
+msgid "Период"
+msgstr ""
+
+#: .\reports\forms.py:63
+msgid "Статистика за период"
+msgstr ""
+
+#: .\reports\forms.py:65
+msgid "Статистика по велаятам"
+msgstr ""
+
+#: .\reports\forms.py:67
+msgid "Статистика по месяцам"
+msgstr ""
+
+#: .\reports\forms.py:69
+msgid "Суммы по больницам"
+msgstr ""
+
+#: .\reports\views.py:40 .\templates\base.html:115
+msgid "Отчёты"
+msgstr ""
+
+#: .\resolution\forms.py:28 .\resolution\forms.py:29 .\resolution\forms.py:30
+#: .\templates\patients\patient_resolution.html:19 .\users\forms.py:15
+msgid "Фамилия"
+msgstr ""
+
+#: .\resolution\forms.py:42 .\templates\investment\investment_list.html:38
+#: .\templates\patients\patient_resolution.html:21
+#: .\templates\resolution\resolution_list.html:45
+msgid "Дата поступления"
+msgstr ""
+
+#: .\resolution\forms.py:45 .\resolution\forms.py:46 .\resolution\forms.py:47
+#: .\templates\resolution\resolution_list.html:42
+msgid "Имя по решению"
+msgstr ""
+
+#: .\resolution\forms.py:49
+msgid "Номер решения"
+msgstr ""
+
+#: .\resolution\forms.py:52
+msgid "Дата решения"
+msgstr ""
+
+#: .\resolution\forms.py:56 .\templates\patients\patient_resolution.html:23
+#: .\templates\resolution\resolution_list.html:47
+msgid "Дата свид. о рожд."
+msgstr ""
+
+#: .\resolution\forms.py:124
+msgid "Имя Фамилия ребенка"
+msgstr ""
+
+#: .\surgery\forms.py:30 .\surgery\forms.py:237
+#: .\templates\patients\patient_surgery_list.html:21
+#: .\templates\surgery\surgery_list.html:42
+msgid "Больница, проводящая лечение"
+msgstr ""
+
+#: .\surgery\forms.py:36 .\surgery\forms.py:244
+msgid "Больница, где проводится операция"
+msgstr ""
+
+#: .\surgery\forms.py:39 .\surgery\forms.py:40 .\surgery\forms.py:41
+#: .\surgery\forms.py:254 .\surgery\forms.py:255 .\surgery\forms.py:256
+#: .\therapy\forms.py:33 .\therapy\forms.py:36 .\therapy\forms.py:39
+msgid "Отделение"
+msgstr ""
+
+#: .\surgery\forms.py:46 .\surgery\forms.py:261
+#: .\templates\patients\patient_surgery_list.html:22
+#: .\templates\patients\patient_therapy_list.html:21
+#: .\templates\surgery\surgery_list.html:43
+#: .\templates\therapy\therapy_list.html:45 .\therapy\forms.py:44
+#: .\therapy\forms.py:194
+msgid "Дата госпитализации"
+msgstr ""
+
+#: .\surgery\forms.py:51 .\surgery\forms.py:266
+#: .\templates\main_page\find_form.html:19
+#: .\templates\patients\patient_surgery_list.html:24
+#: .\templates\surgery\surgery_list.html:45
+msgid "Дата операции"
+msgstr ""
+
+#: .\surgery\forms.py:60 .\surgery\forms.py:63 .\surgery\forms.py:66
+#: .\surgery\forms.py:275 .\surgery\forms.py:278 .\surgery\forms.py:281
+#: .\templates\patients\patient_surgery_list.html:26
+#: .\templates\surgery\surgery_list.html:47
+msgid "Оперировавший врач"
+msgstr ""
+
+#: .\surgery\forms.py:72 .\surgery\forms.py:75 .\surgery\forms.py:284
+#: .\surgery\forms.py:287 .\surgery\forms.py:290
+#: .\templates\patients\patient_surgery_list.html:27
+#: .\templates\surgery\surgery_list.html:48
+msgid "Анестезиолог"
+msgstr ""
+
+#: .\surgery\forms.py:78 .\surgery\forms.py:81 .\surgery\forms.py:84
+#: .\surgery\forms.py:293 .\surgery\forms.py:296 .\surgery\forms.py:299
+#: .\templates\patients\patient_surgery_list.html:28
+#: .\templates\surgery\surgery_list.html:49
+msgid "Медсестра"
+msgstr ""
+
+#: .\surgery\forms.py:88 .\surgery\forms.py:91 .\surgery\forms.py:94
+#: .\surgery\forms.py:303 .\surgery\forms.py:306 .\surgery\forms.py:309
+#: .\templates\patients\patient_surgery_list.html:29
+#: .\templates\surgery\surgery_list.html:50
+msgid "Используемые медикаменты"
+msgstr ""
+
+#: .\surgery\forms.py:375
+msgid "Период (дата операции)"
+msgstr ""
+
+#: .\surgery\views.py:158 .\surgery\views.py:190
+#: .\templates\surgery\create_two.html:9
+msgid "Операция"
+msgstr ""
+
+#: .\templates\base.html:92
+msgid "Главная"
+msgstr ""
+
+#: .\templates\base.html:96 .\templates\base.html:98
+#: .\templates\patient_menu.html:7
+msgid "Пациенты"
+msgstr ""
+
+#: .\templates\base.html:99 .\templates\patient_menu.html:16
+msgid "Решения"
+msgstr ""
+
+#: .\templates\base.html:103 .\templates\base.html:106
+#: .\templates\reports\statistic.html:28 .\templates\reports\statistic.html:60
+#: .\templates\reports\statistic_by_month.html:22
+#: .\templates\reports\statistic_by_velayat.html:22
+#: .\templates\therapy_menu.html:16 .\therapy\views.py:172
+#: .\therapy\views.py:195
+msgid "Лечение"
+msgstr ""
+
+#: .\templates\base.html:105 .\templates\patients\patient_surgery_list.html:12
+#: .\templates\reports\statistic_by_month.html:21
+#: .\templates\reports\statistic_by_velayat.html:21
+#: .\templates\therapy_menu.html:7
+msgid "Операции"
+msgstr ""
+
+#: .\templates\base.html:112
+msgid "Использование"
+msgstr ""
+
+#: .\templates\base.html:118
+msgid "Справочники"
+msgstr ""
+
+#: .\templates\base.html:132 .\templates\create_one.html:26
+#: .\templates\create_two.html:25
+msgid "Необходимо войти в систему"
+msgstr ""
+
+#: .\templates\base.html:133 .\templates\create_one.html:27
+#: .\templates\create_two.html:26 .\templates\users\login.html:13
+#: .\templates\users\signup.html:14 .\users\views.py:67
+msgid "Вход"
+msgstr ""
+
+#: .\templates\base.html:134 .\templates\create_one.html:28
+#: .\templates\create_two.html:27 .\templates\users\login.html:14
+#: .\users\views.py:57
+msgid "Регистрация"
+msgstr ""
+
+#: .\templates\create_one.html:11 .\templates\create_two.html:19
+#: .\templates\diagnosis\create_two.html:15 .\templates\dicts\city.html:14
+#: .\templates\investment\investment_edit.html:13
+#: .\templates\patients\patient_edit.html:10
+#: .\templates\resolution\resolution_edit.html:10
+#: .\templates\surgery\create_two.html:16
+#: .\templates\therapy\create_two.html:17 .\templates\users\profile.html:13
+msgid "Ошибка"
+msgstr ""
+
+#: .\templates\create_one.html:18 .\templates\main_page\links.html:8
+#: .\templates\patients\patient_edit.html:17
+msgid "Новый пациент"
+msgstr ""
+
+#: .\templates\diagnosis\diagnosis_list.html:36
+#: .\templates\patients\patient_list.html:38
+#: .\templates\surgery\surgery_list.html:36
+#: .\templates\therapy\therapy_list.html:36
+msgid "Имя и фамилия пациента"
+msgstr ""
+
+#: .\templates\diagnosis\diagnosis_list.html:38
+#: .\templates\patients\patient_list.html:40
+#: .\templates\surgery\surgery_list.html:38
+#: .\templates\therapy\therapy_list.html:39
+msgid "Домашний адрес"
+msgstr ""
+
+#: .\templates\diagnosis\diagnosis_list.html:42
+#: .\templates\patients\patient_diagnosis_list.html:20
+#: .\templates\patients\patient_surgery_list.html:25
+#: .\templates\patients\patient_therapy_list.html:22
+#: .\templates\surgery\surgery_list.html:46
+#: .\templates\therapy\therapy_list.html:46
+msgid "Дата выписки из стационара"
+msgstr ""
+
+#: .\templates\diagnosis\diagnosis_list.html:46
+#: .\templates\investment\investment_list.html:44
+#: .\templates\main_page\last_records.html:13
+#: .\templates\patients\patient_diagnosis_list.html:17
+#: .\templates\patients\patient_resolution.html:24
+#: .\templates\patients\patient_surgery_list.html:19
+#: .\templates\patients\patient_therapy_list.html:18
+#: .\templates\resolution\resolution_list.html:48
+#: .\templates\surgery\surgery_list.html:52
+#: .\templates\therapy\therapy_list.html:37
+msgid "Добавлено"
+msgstr ""
+
+#: .\templates\dicts\city_confirm_delete.html:5
+msgid "Вы действительно ходите удалить запись?"
+msgstr ""
+
+#: .\templates\dicts\city_confirm_delete.html:9
+#: .\templates\patients\patient_confirm_delete.html:10
+msgid "Отмена"
+msgstr ""
+
+#: .\templates\dicts\dicts.html:7
+msgid "Список справочников"
+msgstr ""
+
+#: .\templates\dicts\dicts.html:9
+msgid "Велаяты (города)"
+msgstr ""
+
+#: .\templates\dicts\dicts.html:10
+msgid "Этрапы (города)"
+msgstr ""
+
+#: .\templates\dicts\dicts.html:11
+msgid "Учебные заведения"
+msgstr ""
+
+#: .\templates\dicts\dicts.html:12
+msgid "Организации"
+msgstr ""
+
+#: .\templates\dicts\dicts.html:13
+msgid "Больницы"
+msgstr ""
+
+#: .\templates\dicts\dicts.html:14
+msgid "Врачи"
+msgstr ""
+
+#: .\templates\investment\investment_edit.html:9
+msgid "Целевое расходование"
+msgstr ""
+
+#: .\templates\investment\investment_list.html:36
+msgid "Целевая организация"
+msgstr ""
+
+#: .\templates\investment\investment_list.html:40
+msgid "Ед. изм."
+msgstr ""
+
+#: .\templates\investment\investment_list.html:41
+msgid "Кол-во"
+msgstr ""
+
+#: .\templates\main_page\find_form.html:4
+msgid "Поиск"
+msgstr ""
+
+#: .\templates\main_page\find_form.html:11
+msgid "ФИО пациента"
+msgstr ""
+
+#: .\templates\main_page\find_form.html:15
+msgid "Адрес больницы"
+msgstr ""
+
+#: .\templates\main_page\info.html:5 .\templates\reports\info.html:5
+msgid "Информация"
+msgstr ""
+
+#: .\templates\main_page\info.html:9 .\templates\reports\statistic.html:27
+#: .\templates\reports\statistic.html:59
+msgid "Операций"
+msgstr ""
+
+#: .\templates\main_page\info.html:11 .\templates\main_page\info.html:16
+#: .\templates\reports\info.html:13 .\templates\reports\info.html:27
+#: .\templates\reports\info.html:41 .\templates\reports\info.html:55
+#: .\templates\reports\statistic.html:58
+#: .\templates\reports\statistic_by_month.html:24
+#: .\templates\reports\statistic_by_velayat.html:24
+msgid "Всего"
+msgstr ""
+
+#: .\templates\main_page\info.html:12 .\templates\main_page\info.html:17
+#: .\templates\reports\info.html:18 .\templates\reports\info.html:32
+#: .\templates\reports\info.html:46 .\templates\reports\info.html:60
+msgid "За год"
+msgstr ""
+
+#: .\templates\main_page\info.html:14 .\templates\reports\info.html:51
+msgid "Использовано"
+msgstr ""
+
+#: .\templates\main_page\last_records.html:14
+msgid "Тип записи"
+msgstr ""
+
+#: .\templates\main_page\last_records.html:15
+msgid "Дата события"
+msgstr ""
+
+#: .\templates\main_page\links.html:5
+msgid "Быстрые действия"
+msgstr ""
+
+#: .\templates\main_page\links.html:9
+msgid "Новое решение"
+msgstr ""
+
+#: .\templates\main_page\links.html:10
+#: .\templates\patients\patient_edit.html:25
+msgid "Добавить запись об операции"
+msgstr ""
+
+#: .\templates\main_page\links.html:11
+#: .\templates\patients\patient_edit.html:28
+msgid "Добавить запись о лечении"
+msgstr ""
+
+#: .\templates\main_page\links.html:12
+#: .\templates\patients\patient_edit.html:31
+msgid "Добавить запись о диагностике"
+msgstr ""
+
+#: .\templates\main_page\links.html:13
+msgid "Добавить запись об использовании средств"
+msgstr ""
+
+#: .\templates\pagination.html:6
+#: .\templates\patients\patient_diagnosis_list.html:48
+#: .\templates\patients\patient_surgery_list.html:63
+#: .\templates\patients\patient_therapy_list.html:47
+msgid "Предыдущая"
+msgstr ""
+
+#: .\templates\pagination.html:13
+#: .\templates\patients\patient_diagnosis_list.html:54
+#: .\templates\patients\patient_surgery_list.html:69
+#: .\templates\patients\patient_therapy_list.html:53
+msgid "Следующая"
+msgstr ""
+
+#: .\templates\patients\patient_confirm_delete.html:6
+msgid "Вы действительно ходите удалить пациента?"
+msgstr ""
+
+#: .\templates\patients\patient_list.html:42
+msgid "Добавлен"
+msgstr ""
+
+#: .\templates\patients\patient_resolution.html:12
+#: .\templates\resolution\resolution_edit.html:15
+msgid "Решение"
+msgstr ""
+
+#: .\templates\patients\patient_resolution.html:22
+#: .\templates\resolution\resolution_list.html:46
+msgid "Дата выдачи решения"
+msgstr ""
+
+#: .\templates\patients\patient_surgery_list.html:23
+#: .\templates\surgery\surgery_list.html:44
+msgid "Больница и отделение, где проводится операция"
+msgstr ""
+
+#: .\templates\patients\patient_surgery_list.html:30
+#: .\templates\patients\patient_therapy_list.html:23
+#: .\templates\surgery\surgery_list.html:51
+#: .\templates\therapy\therapy_list.html:47
+msgid "Стоимость лечения"
+msgstr ""
+
+#: .\templates\reports\hospitals.html:22
+msgid "Кол-во событий"
+msgstr ""
+
+#: .\templates\reports\hospitals.html:23
+msgid "Сумма"
+msgstr ""
+
+#: .\templates\reports\hospitals.html:37
+#: .\templates\reports\statistic_by_month.html:46
+#: .\templates\reports\statistic_by_velayat.html:46
+msgid "Итого"
+msgstr ""
+
+#: .\templates\reports\info.html:9
+msgid "Прооперировано"
+msgstr ""
+
+#: .\templates\reports\info.html:23
+msgid "Пролечено"
+msgstr ""
+
+#: .\templates\reports\info.html:37
+msgid "Диагностировано"
+msgstr ""
+
+#: .\templates\reports\statistic.html:18
+msgid "Добавлено новых записей"
+msgstr ""
+
+#: .\templates\reports\statistic.html:25
+msgid "Пациентов"
+msgstr ""
+
+#: .\templates\reports\statistic.html:26
+msgid "Решений"
+msgstr ""
+
+#: .\templates\reports\statistic.html:49
+msgid "Выполнено за счёт фонда"
+msgstr ""
+
+#: .\templates\reports\statistic_by_month.html:20
+msgid "Месяц"
+msgstr ""
+
+#: .\templates\reports\statistic_by_velayat.html:20
+msgid "Велаят"
+msgstr ""
+
+#: .\templates\resolution\resolution_edit.html:17
+msgid "Новая запись"
+msgstr ""
+
+#: .\templates\resolution\resolution_list.html:41
+msgid "Фамилия ребенка"
+msgstr ""
+
+#: .\templates\search_panel.html:10
+msgid "Панель поиска"
+msgstr ""
+
+#: .\templates\therapy\create_two.html:9
+msgid "Терапия"
+msgstr ""
+
+#: .\templates\therapy\therapy_list.html:42
+msgid "Больница, куда обратились"
+msgstr ""
+
+#: .\templates\therapy\therapy_list.html:43
+msgid "Больница и отделение, где проходило лечение"
+msgstr ""
+
+#: .\templates\users\login.html:14
+msgid "Нет аккаунта?"
+msgstr ""
+
+#: .\templates\users\signup.html:14
+msgid "Есть аккаунт?"
+msgstr ""
+
+#: .\therapy\forms.py:23
+msgid "Обращение в больницу"
+msgstr ""
+
+#: .\therapy\forms.py:29 .\therapy\forms.py:287
+msgid "Больница, где проходило лечение"
+msgstr ""
+
+#: .\therapy\forms.py:53 .\therapy\forms.py:56 .\therapy\forms.py:59
+#: .\therapy\forms.py:213 .\therapy\forms.py:216 .\therapy\forms.py:219
+msgid "Предоставленное лечение"
+msgstr ""
+
+#: .\therapy\forms.py:63 .\therapy\forms.py:66 .\therapy\forms.py:69
+#: .\therapy\forms.py:203 .\therapy\forms.py:206 .\therapy\forms.py:209
+msgid "Лечащий врач"
+msgstr ""
+
+#: .\users\forms.py:16 .\users\forms.py:32 .\users\forms.py:60
+msgid "Логин"
+msgstr ""
+
+#: .\users\forms.py:17 .\users\forms.py:33
+msgid "Емейл"
+msgstr ""
+
+#: .\users\forms.py:18 .\users\forms.py:61
+msgid "Пароль"
+msgstr ""
+
+#: .\users\forms.py:19
+msgid "Подтверждение пароля"
+msgstr ""
+
+#: .\users\forms.py:34
+msgid "Язык данных"
+msgstr ""
+
+#: .\users\forms.py:35
+msgid "Язык интерфейса"
+msgstr ""
+
+#: .\users\forms.py:65
+msgid "Текущий пароль"
+msgstr ""
+
+#: .\users\forms.py:69
+msgid "Необходимо ввести текущий пароль"
+msgstr ""
+
+#: .\users\forms.py:71
+msgid "Новый пароль"
+msgstr ""
+
+#: .\users\forms.py:75
+msgid "Необходимо ввести новый пароль"
+msgstr ""
+
+#: .\users\forms.py:76
+msgid "Повтор (новый пароль))"
+msgstr ""
+
+#: .\users\forms.py:80
+msgid "Необходимо ввести новый пароль повторно"
+msgstr ""
+
+#: .\users\views.py:24
+msgid "Профайл"
+msgstr ""
+
+#: .\users\views.py:83
+msgid "Изменить пароль"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\contrib\messages\apps.py:15
+msgid "Messages"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
+msgid "Site Maps"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
+msgid "Static Files"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\contrib\syndication\apps.py:7
+msgid "Syndication"
+msgstr ""
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: .\venv\Lib\site-packages\django\core\paginator.py:30
+msgid "…"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:50
+msgid "That page number is not an integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:52
+msgid "That page number is less than 1"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:54
+msgid "That page contains no results"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:22
+msgid "Enter a valid value."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:104
+#: .\venv\Lib\site-packages\django\forms\fields.py:752
+msgid "Enter a valid URL."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:165
+msgid "Enter a valid integer."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:176
+msgid "Enter a valid email address."
+msgstr ""
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: .\venv\Lib\site-packages\django\core\validators.py:259
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:267
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:279
+#: .\venv\Lib\site-packages\django\core\validators.py:287
+#: .\venv\Lib\site-packages\django\core\validators.py:316
+msgid "Enter a valid IPv4 address."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:296
+#: .\venv\Lib\site-packages\django\core\validators.py:317
+msgid "Enter a valid IPv6 address."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:308
+#: .\venv\Lib\site-packages\django\core\validators.py:315
+msgid "Enter a valid IPv4 or IPv6 address."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:351
+msgid "Enter only digits separated by commas."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:357
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:392
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:401
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:410
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:420
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:438
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:461
+#: .\venv\Lib\site-packages\django\forms\fields.py:347
+#: .\venv\Lib\site-packages\django\forms\fields.py:386
+msgid "Enter a number."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:463
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:468
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:473
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:544
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:605
+msgid "Null characters are not allowed."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\base.py:1423
+#: .\venv\Lib\site-packages\django\forms\models.py:893
+msgid "and"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\base.py:1425
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\constraints.py:17
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:128
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:129
+msgid "This field cannot be null."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:130
+msgid "This field cannot be blank."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:131
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr ""
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or
+#. 'month'. Eg: "Title must be unique for pub_date year"
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:135
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:173
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1094
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1095
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1097
+msgid "Boolean (Either True or False)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1147
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1149
+msgid "String (unlimited)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1253
+msgid "Comma-separated integers"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1354
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1358
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1493
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1362
+msgid "Date (without time)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1489
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1497
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1502
+msgid "Date (with time)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1626
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1628
+msgid "Decimal number"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1789
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
+"uuuuuu] format."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1793
+msgid "Duration"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1845
+msgid "Email address"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1870
+msgid "File path"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1948
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1950
+msgid "Floating point number"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1990
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1992
+msgid "Integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2088
+msgid "Big (8 byte) integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2105
+msgid "Small integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2113
+msgid "IPv4 address"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2144
+msgid "IP address"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2237
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2238
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2240
+msgid "Boolean (Either True, False or None)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2291
+msgid "Positive big integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2306
+msgid "Positive integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2321
+msgid "Positive small integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2337
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2373
+msgid "Text"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2448
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2452
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2456
+msgid "Time"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2564
+msgid "URL"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2588
+msgid "Raw binary data"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2653
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2655
+msgid "Universally unique identifier"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:232
+msgid "File"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:393
+msgid "Image"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:26
+msgid "A JSON object"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:28
+msgid "Value must be valid JSON."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:919
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r does not exist."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:921
+msgid "Foreign Key (type determined by related field)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1212
+msgid "One-to-one relationship"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1269
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1271
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1319
+msgid "Many-to-many relationship"
+msgstr ""
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: .\venv\Lib\site-packages\django\forms\boundfield.py:184
+msgid ":?.!"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:91
+msgid "This field is required."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:298
+msgid "Enter a whole number."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:467
+#: .\venv\Lib\site-packages\django\forms\fields.py:1241
+msgid "Enter a valid date."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:490
+#: .\venv\Lib\site-packages\django\forms\fields.py:1242
+msgid "Enter a valid time."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:517
+msgid "Enter a valid date/time."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:551
+msgid "Enter a valid duration."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:552
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:621
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:622
+msgid "No file was submitted."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:623
+msgid "The submitted file is empty."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:625
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:630
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:694
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:857
+#: .\venv\Lib\site-packages\django\forms\fields.py:949
+#: .\venv\Lib\site-packages\django\forms\models.py:1566
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:951
+#: .\venv\Lib\site-packages\django\forms\fields.py:1070
+#: .\venv\Lib\site-packages\django\forms\models.py:1564
+msgid "Enter a list of values."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1071
+msgid "Enter a complete value."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1310
+msgid "Enter a valid UUID."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1340
+msgid "Enter a valid JSON."
+msgstr ""
+
+#. Translators: This is the default suffix added to form field labels
+#: .\venv\Lib\site-packages\django\forms\forms.py:98
+msgid ":"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\forms.py:244
+#: .\venv\Lib\site-packages\django\forms\forms.py:328
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:63
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:67
+#, python-format
+msgid "Please submit at most %(num)d form."
+msgid_plural "Please submit at most %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:72
+#, python-format
+msgid "Please submit at least %(num)d form."
+msgid_plural "Please submit at least %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:484
+#: .\venv\Lib\site-packages\django\forms\formsets.py:491
+msgid "Order"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:499
+msgid "Delete"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:886
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:891
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:898
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:907
+msgid "Please correct the duplicate values below."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1338
+msgid "The inline value did not match the parent instance."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1429
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1568
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\utils.py:226
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:463
+msgid "Clear"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:464
+msgid "Currently"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:465
+msgid "Change"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:794
+msgid "Unknown"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:795
+msgid "Yes"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:796
+msgid "No"
+msgstr ""
+
+#. Translators: Please do not add spaces around commas.
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:861
+msgid "yes,no,maybe"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:891
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:908
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:910
+#, python-format
+msgid "%s KB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:912
+#, python-format
+msgid "%s MB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:914
+#, python-format
+msgid "%s GB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:916
+#, python-format
+msgid "%s TB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:918
+#, python-format
+msgid "%s PB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:73
+msgid "p.m."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:74
+msgid "a.m."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:79
+msgid "PM"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:80
+msgid "AM"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:152
+msgid "midnight"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:154
+msgid "noon"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:7
+msgid "Monday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:8
+msgid "Tuesday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:9
+msgid "Wednesday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:10
+msgid "Thursday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:11
+msgid "Friday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:12
+msgid "Saturday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:13
+msgid "Sunday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:16
+msgid "Mon"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:17
+msgid "Tue"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:18
+msgid "Wed"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:19
+msgid "Thu"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:20
+msgid "Fri"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:21
+msgid "Sat"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:22
+msgid "Sun"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:25
+msgid "January"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:26
+msgid "February"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:27
+msgid "March"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:28
+msgid "April"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:29
+msgid "May"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:30
+msgid "June"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:31
+msgid "July"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:32
+msgid "August"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:33
+msgid "September"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:34
+msgid "October"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:35
+msgid "November"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:36
+msgid "December"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:39
+msgid "jan"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:40
+msgid "feb"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:41
+msgid "mar"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:42
+msgid "apr"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:43
+msgid "may"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:44
+msgid "jun"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:45
+msgid "jul"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:46
+msgid "aug"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:47
+msgid "sep"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:48
+msgid "oct"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:49
+msgid "nov"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:50
+msgid "dec"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:53
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:54
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:55
+msgctxt "abbrev. month"
+msgid "March"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:56
+msgctxt "abbrev. month"
+msgid "April"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:57
+msgctxt "abbrev. month"
+msgid "May"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:58
+msgctxt "abbrev. month"
+msgid "June"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:59
+msgctxt "abbrev. month"
+msgid "July"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:60
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:61
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:62
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:63
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:64
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:67
+msgctxt "alt. month"
+msgid "January"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:68
+msgctxt "alt. month"
+msgid "February"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:69
+msgctxt "alt. month"
+msgid "March"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:70
+msgctxt "alt. month"
+msgid "April"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:71
+msgctxt "alt. month"
+msgid "May"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:72
+msgctxt "alt. month"
+msgid "June"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:73
+msgctxt "alt. month"
+msgid "July"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:74
+msgctxt "alt. month"
+msgid "August"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:75
+msgctxt "alt. month"
+msgid "September"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:76
+msgctxt "alt. month"
+msgid "October"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:77
+msgctxt "alt. month"
+msgid "November"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:78
+msgctxt "alt. month"
+msgid "December"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\ipv6.py:8
+msgid "This is not a valid IPv6 address."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\text.py:78
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\text.py:254
+msgid "or"
+msgstr ""
+
+#. Translators: This string is used as a separator between list elements
+#: .\venv\Lib\site-packages\django\utils\text.py:273
+#: .\venv\Lib\site-packages\django\utils\timesince.py:135
+msgid ", "
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:8
+#, python-format
+msgid "%(num)d year"
+msgid_plural "%(num)d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:9
+#, python-format
+msgid "%(num)d month"
+msgid_plural "%(num)d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:10
+#, python-format
+msgid "%(num)d week"
+msgid_plural "%(num)d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:11
+#, python-format
+msgid "%(num)d day"
+msgid_plural "%(num)d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:12
+#, python-format
+msgid "%(num)d hour"
+msgid_plural "%(num)d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:13
+#, python-format
+msgid "%(num)d minute"
+msgid_plural "%(num)d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:111
+msgid "Forbidden"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:112
+msgid "CSRF verification failed. Request aborted."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:116
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:122
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:127
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a rel=\"noreferrer"
+"\" …> for links to third-party sites."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:136
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:142
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:148
+msgid "More information is available with DEBUG=True."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:44
+msgid "No year specified"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:64
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:115
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:214
+msgid "Date out of range"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:94
+msgid "No month specified"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:147
+msgid "No day specified"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:194
+msgid "No week specified"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:349
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:380
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:652
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:692
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\detail.py:56
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:70
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:77
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:169
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\static.py:38
+msgid "Directory indexes are not allowed here."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\static.py:40
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\static.py:79
+#, python-format
+msgid "Index of %(directory)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:220
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:206
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:221
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
+"\">DEBUG=True</a> is in your settings file and you have not configured any "
+"URLs."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:229
+msgid "Django Documentation"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:230
+msgid "Topics, references, &amp; how-to’s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:238
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:239
+msgid "Get started with Django"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:247
+msgid "Django Community"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:248
+msgid "Connect, get help, or contribute"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django_bootstrap5\components.py:26
+msgid "close"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django_currentuser\db\models\fields.py:14
+msgid "as default value sets the current logged in user if available"
+msgstr ""
+
+#: .\venv\Lib\site-packages\easy_select2\forms.py:7
+msgid ""
+"Hold down \"Control\", or \"Command\" on a Mac, to select more than one."
+msgstr ""

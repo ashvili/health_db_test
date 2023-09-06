@@ -1,0 +1,4 @@
+for install
+
+for %f in (*.whl) do pip install --no-index --find-links=./ %f
+

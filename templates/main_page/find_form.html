@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h5 class="h5 text-primary"> {% trans "Поиск" %} </h4>
+        </div>
+        <div class="card-body">
+            <form method="post">
+                {% csrf_token %}
+                    <p>
+{#                        <label for="id_name">ФИО пациента:</label>#}
+                        <input type="text" name="username" class="form-input form-control" maxlength="150" required id="id_username" placeholder="{% trans "ФИО пациента" %}">
+                    </p>
+                    <p>
+{#                        <label for="id_name">Адрес больницы:</label>#}
+                        <input type="text" name="username" class="form-input form-control" maxlength="150" required id="id_username" placeholder="{% trans "Адрес больницы" %}">
+                    </p>
+                    <p>
+{#                        <label for="id_name">Дата операции:</label>#}
+                        <input type="text" name="username" class="form-input form-control" maxlength="150" required id="id_username" placeholder="{% trans "Дата операции" %}">
+                    </p>
+
+                    <button type="submit" class="btn btn-primary">{% trans "Найти" %}</button>
+            </form>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+
+{% block content %}
+{% if user.is_authenticated %}
+
+    {% if object.patient_id %}
+    <p class="h5 text-primary"> {{ title }} (
+        <a class="h5 link-primary" href="{% url 'patients:patient_edit' object.patient_id %}">
+            {% trans "Пациент" %}: {{ object.patient }}
+        </a>)
+    </p>
+    {% endif %}
+    <form method="post" >
+    {% if not error is None %}
+        <p class="text-danger">{% trans "Ошибка" %}: {{ error|default_if_none:'' }} </p>
+    {% endif %}
+        {% crispy form %}
+    </form>
+
+{% else %}
+  <p>{% trans "Необходимо войти в систему" %}</p>
+  <a href="{% url 'users:login' %}">{% trans "Вход" %}</a> |
+  <a href="{% url 'users:signup' %}">{% trans "Регистрация" %}</a>
+{% endif %}
+{% endblock %}

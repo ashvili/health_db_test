@@ -1,0 +1,16 @@
+{% load i18n %}
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h5 class="h5 text-primary"> {% trans "Быстрые действия" %} </h5>
+        </div>
+        <div class="card-body">
+            <div> <a class="link-primary" href="{% url 'patients:patient_create' %}">{% trans "Новый пациент" %}</a> </div>
+            <div> <a class="link-primary" href="{% url 'resolutions:resolution_create' %}">{% trans "Новое решение" %}</a> </div>
+            <div> <a href="{% url 'surgery:create_one' %}">{% trans "Добавить запись об операции" %}</a> </div>
+            <div> <a href="{% url 'therapy:create_one' %}">{% trans "Добавить запись о лечении" %}</a> </div>
+            <div> <a href="{% url 'diagnosis:create_one' %}">{% trans "Добавить запись о диагностике" %}</a> </div>
+            <div> <a href="{% url 'investment:create' %}">{% trans "Добавить запись об использовании средств" %}</a> </div>
+        </div>
+    </div>
+</div>

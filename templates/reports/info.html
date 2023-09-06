@@ -1,0 +1,69 @@
+{% load i18n %}
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h5 class="h5 text-primary"> {% trans "Информация" %} </h5>
+        </div>
+        <div class="card-body">
+            <ul>
+                <li class="fw-bold">{% trans "Прооперировано" %}:</li>
+                <ul>
+                    <li class="fw-medium">
+                        <a id="id_link_surgery_total" href="{% url 'surgery:surgery_list' %}">
+                            {% trans "Всего" %}: - {{ surgery_total.count }} / {{ surgery_total.sum|default_if_none:'0.0'|floatformat:2 }}
+                        </a>
+                    </li>
+                    <li>
+                        <a id="id_link_surgery_year" href="{% url 'surgery:surgery_list_period' start_year end_year %}">
+                           {% trans "За год" %}: - {{ surgery_year.count }} / {{ surgery_year.sum|default_if_none:'0.0'|floatformat:2 }}
+                        </a>
+                    </li>
+                </ul>
+
+                <li class="fw-bold">{% trans "Пролечено" %}:</li>
+                <ul>
+                    <li class="fw-medium">
+                        <a id="id_link_surgery_total" href="{% url 'therapy:therapy_list' %}">
+                            {% trans "Всего" %}: - {{ therapy_total.count }} / {{ therapy_total.sum|default_if_none:'0.0'|floatformat:2 }}
+                        </a>
+                    </li>
+                    <li>
+                        <a id="id_link_surgery_year" href="{% url 'therapy:therapy_list_period' start_year end_year %}">
+                           {% trans "За год" %}: - {{ therapy_year.count }} / {{ therapy_year.sum|default_if_none:'0.0'|floatformat:2 }}
+                        </a>
+                    </li>
+                </ul>
+
+                <li class="fw-bold">{% trans "Диагностировано" %}:</li>
+                <ul>
+                    <li class="fw-medium">
+                        <a id="id_link_surgery_total" href="{% url 'diagnosis:diagnosis_list' %}">
+                            {% trans "Всего" %}: - {{ diagnosis_total.count }} / {{ diagnosis_total.sum|default_if_none:'0.0'|floatformat:2 }}
+                        </a>
+                    </li>
+                    <li>
+                        <a id="id_link_surgery_year" href="{% url 'diagnosis:diagnosis_list_period' start_year end_year %}">
+                           {% trans "За год" %}: - {{ diagnosis_year.count }} / {{ diagnosis_year.sum|default_if_none:'0.0'|floatformat:2 }}
+                        </a>
+                    </li>
+                </ul>
+
+                <li class="fw-bold">{% trans "Использовано" %}:</li>
+                <ul>
+                    <li class="fw-medium">
+                        <a id="id_link_surgery_total" href="{% url 'investment:investment_list' %}">
+                            {% trans "Всего" %}: - {{ investment_total.count }} / {{ investment_total.sum|default_if_none:'0.0'|floatformat:2 }}
+                        </a>
+                    </li>
+                    <li>
+                        <a id="id_link_surgery_total" href="{% url 'investment:investment_list_period' start_year end_year %}">
+                            {% trans "За год" %}:- {{ investment_year.count }} / {{ investment_year.sum|default_if_none:'0.0'|floatformat:2 }}
+                        </a>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+</div>
+
+

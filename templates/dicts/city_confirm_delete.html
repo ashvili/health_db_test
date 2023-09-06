@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{%  block content %}
+{% load i18n %}
+<form method="post">{% csrf_token %}
+    <p class="h4" style="padding-bottom: 2vh;">{% trans "Вы действительно ходите удалить запись?" %}
+        "{{ object }}"?</p>
+    {{ form }}
+    <input type="submit" class="btn btn-danger" value="{% trans "Удалить" %}">
+    <a type="submit" class="btn btn-secondary" onclick="history.back()">{% trans "Отмена" %}</a>
+</form>
+{% endblock %}

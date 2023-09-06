@@ -1,0 +1,21 @@
+{% load i18n %}
+        <div class="row" style="padding-bottom: 1vh;">
+            <a class="col col-4 btn
+                      {% if 'patient' in request.path  %} btn-primary {% else %} btn-outline-secondary {% endif %}
+                      text-decoration-none text-black-50 fw-bold" style="margin: 5px"
+                        href="{% url 'patients:patient_list' %}">
+                {% trans "Пациенты" %}
+                {% if patient_list %}
+                    ({{ patient_list.count|default_if_none:'0' }})
+                {% endif %}
+            </a>
+            <a class="col col-4 btn
+                      {% if 'resolution' in request.path  %} btn-primary {% else %} btn-outline-secondary {% endif %}
+                      text-decoration-none text-black-50 fw-bold" style="margin: 5px"
+                        href="{% url 'resolutions:resolution_list' %}">
+                {% trans "Решения" %}
+                {% if resolution_list %}
+                    ({{ resolution_list.count|default_if_none:'0' }})
+                {% endif %}
+            </a>
+        </div>

@@ -1,0 +1,35 @@
+{% load i18n %}
+{% load crispy_forms_tags %}
+            <div class="col-10">
+                <div class="panel-group">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <p class="panel-title">
+                        <button class="btn btn-light btn-link" onclick="$('#form-panel').toggle();"
+                                  >
+                            {% trans "Панель поиска" %}
+                        </button>
+{#                        <a data-bs-toggle="collapse" href="#" onclick="$('#form-panel').toggle();">{% trans "Панель поиска" %}</a>#}
+                      </p>
+                    </div>
+                    <div id="form-panel" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <form method="post">
+                            {% crispy form %}
+                        </form>
+                      </div>
+                      <div class="panel-footer"></div>
+                    </div>
+                  </div>
+                </div>
+
+{#                <button class="btn btn-primary" type="button"#}
+{#                        data-bs-toggle="collapse"#}
+{#                        data-bs-target="#form"#}
+{#                        aria-expanded="false" aria-controls="form" >#}
+{#                    {% trans "Поиск" %}</button>#}
+{#                <form method="post" class="collapse" id="form">#}
+{#                    {% crispy form %}#}
+{#                </form>#}
+
+            </div>

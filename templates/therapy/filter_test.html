@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form method="GET">
+    <input type="text" id="search-text">
+    <select id="filtered-list">
+        {% for item in item_list %}
+            <option value="{{ item.id }}">
+                {{ item.name }}
+            </option>
+        {% endfor %}
+</select>
+</form>
+
+{% endblock %}
+
+{% block additional_script %}
+
+    <script>
+    $("#search-text").on("input", function(event) {
+        event.preventDefault();
+        var searchText = $(this).val();
+        $.ajax({
+            url: "{% url 'filter_data' %}",
+            method: 'GET',
+            data: {
+                search_text: searchText
+        },
+        success: function(data) {
+            // data is a JSON object with a list of filtered items
+            // clear the existing options
+            $("#filtered-list").empty();
+            // loop through the data and append new options
+            $.each(data, function(index, item) {
+                $("#filtered-list").append(
+                $("<option></option>")
+                .attr("value", item.id)
+                .text(item.name)
+                );
+            });
+        },
+        error: function(error_data) {
+            console.log("error");
+            console.log(error_data);
+        }
+        });
+    });
+
+
+
+    </script>
+
+{% endblock %}

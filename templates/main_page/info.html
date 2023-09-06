@@ -1,0 +1,22 @@
+{% load i18n %}
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h5 class="h5 text-primary"> {% trans "Информация" %} </h4>
+        </div>
+        <div class="card-body">
+            <ul>
+                <li class="fw-bold">{% trans "Операций" %}:</li>
+                <ul>
+                    <li class="fw-medium">{% trans "Всего" %}: - {{ surgery_total.count }} / {{ surgery_total.sum }} </li>
+                    <li>{% trans "За год" %}: - {{ surgery_year.count }} / {{ surgery_year.sum }} </li>
+                </ul>
+                <li class="fw-bold">{% trans "Использовано" %}:</li>
+                <ul>
+                    <li class="fw-medium">{% trans "Всего" %}: - {{ investment_total.count }} / {{ investment_total.sum }} </li>
+                    <li>{% trans "За год" %}:- {{ investment_year.count }} / {{ investment_year.sum }} </li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+</div>

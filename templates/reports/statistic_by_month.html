@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+{#    <div class="card card-body" style="margin-bottom: 2vh;">#}
+{#        <div class="row">#}
+{#            {% crispy form %}#}
+{#        </div>#}
+{#    </div>#}
+    <h4 class="text-primary">{{ title }}</h4>
+    <div class="row">
+    <div class="card">
+        <div class="card-header">
+            <div class="card-body">
+                <div class="col">
+                    <table class="table table-bordered border-primary">
+                        <thead class="table-primary border-primary">
+                            <th>{% trans "Месяц" %}</th>
+                            <th>{% trans "Операции" %}</th>
+                            <th>{% trans "Лечение" %}</th>
+                            <th>{% trans "Диагностика" %}</th>
+                            <th>{% trans "Всего" %}</th>
+                        </thead>
+                        <tbody >
+                        {% for record in object_list %}{% if record.total_count > 0 %}
+                            <tr>
+                                <th rowspan="2">{{ record.month }}</th>
+
+                                <td class="text-end">{{ record.surgery_count }}</td>
+                                <td class="text-end">{{ record.therapy_count }}</td>
+                                <td class="text-end">{{ record.diagnosis_count }}</td>
+                                <td class="text-end fw-bolder">{{ record.total_count }}</td>
+                            </tr>
+                            <tr class="table-active">
+                                <td class="text-end">{{ record.surgery_sum|floatformat:2 }}</td>
+                                <td class="text-end">{{ record.therapy_sum|floatformat:2 }}</td>
+                                <td class="text-end">{{ record.diagnosis_sum|floatformat:2 }}</td>
+                                <td class="text-end fw-bolder">{{ record.total_sum|floatformat:2 }}</td>
+                            </tr>
+                        {% endif %}{% endfor %}
+                        </tbody>
+                        <tfoot>
+                            <tr class="table-primary border-primary">
+                                <td rowspan="2" class="text-center fw-bold">{% trans "Итого" %}</td>
+                                <td class="text-end fw-bolder">{{ total.surgery_count }}</td>
+                                <td class="text-end fw-bolder">{{ total.therapy_count }}</td>
+                                <td class="text-end fw-bolder">{{ total.diagnosis_count }}</td>
+                                <td class="text-end fw-bolder">{{ total.total_count }}</td>
+                            </tr>
+                            <tr class="table-primary border-primary">
+                                <td class="text-end fw-bolder">{{ total.surgery_sum|floatformat:2 }}</td>
+                                <td class="text-end fw-bolder">{{ total.therapy_sum|floatformat:2 }}</td>
+                                <td class="text-end fw-bolder">{{ total.diagnosis_sum|floatformat:2 }}</td>
+                                <td class="text-end fw-bolder">{{ total.total_sum|floatformat:2 }}</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+{% block additional_script %}
+    <script src={% static 'js/search_utils.js' %}></script>
+{% endblock %}

@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="container " style="padding-top: 2vh">
+
+    <div class="table">
+        {% include 'therapy_menu.html' %}
+        <div class="row" style="padding-bottom: 1vh;">
+            <div class="col-1">
+                <div class="col btn btn-light">
+                    <a class="bg-transparent text-decoration-none text-black"
+                       href="{% url 'therapy:create_one' %}">
+                        <img src="{% static "images/add_blue.png" %}" height="36" width="36" alt="">
+                    </a>
+                </div>
+            </div>
+            {% include 'search_panel.html' %}
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                <div class="card">
+{#                    <div class="card-header">#}
+{#                        <h5 class="h5 text-primary"> Записи </h5>#}
+{#                    </div>#}
+                    <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">{% trans "Имя и фамилия пациента" %}</th>
+                                    <th scope="col">{% trans "Добавлено" %}</th>
+                                    <th scope="col">{% trans "Учебное заведение" %}</th>
+                                    <th scope="col">{% trans "Домашний адрес" %}</th>
+                                    <th scope="col">{% trans "Дата рождения" %}</th>
+                                    <th scope="col">{% trans "Диагноз" %}</th>
+                                    <th scope="col">{% trans "Больница, куда обратились" %}</th>
+                                    <th scope="col">{% trans "Больница и отделение, где проходило лечение" %}</th>
+                                    <th scope="col">{% trans "Врач" %}</th>
+                                    <th scope="col">{% trans "Дата госпитализации" %}</th>
+                                    <th scope="col">{% trans "Дата выписки из стационара" %}</th>
+                                    <th scope="col">{% trans "Стоимость лечения" %}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for record in therapy_list %}
+                                <tr class="pointer" onclick="document.location = '{% url 'therapy:therapy_edit' record.id %}';">
+                                    <td scope="row" style="min-width: 15vw;">
+                                            {{ record.patient.fullname }}
+                                    </td>
+                                    <td >
+                                            {{ record.created_at|date:'d-m-Y H:i' }}
+                                    </td>
+                                    <td style="min-width: 10vw;">{{ record.patient.education_institution.name|default_if_none:'' }}
+                                    </td>
+                                    <td style="min-width: 12vw;">
+                                        {{ record.patient.etrap|default_if_none:'' }} {% if record.patient.etrap %} , {% endif %}
+                                        {{ record.patient.city|default_if_none:'' }} {% if record.patient.city %} , {% endif %}
+                                        {{ record.patient.address|default_if_none:'' }}
+                                    </td>
+                                    <td style="min-width: 8vw;">{{ record.patient.date_birthday|date:'d-m-Y' }}</td>
+                                    <td style="min-width: 20vw;">{{ record.diagnosis|truncatechars:100|default_if_none:'' }}</td>
+                                    <td style="min-width: 10vw;">{{ record.hospital|default_if_none:'' }}</td>
+                                    <td style="min-width: 12vw;">
+                                        {{ record.hospital_therapy|default_if_none:'' }}
+                                        {{ record.department_therapy|default_if_none:'' }}
+                                    </td>
+                                    <td style="min-width: 10vw;">{{ record.doctor|default_if_none:'' }}</td>
+                                    <td style="min-width: 8vw;">{{ record.income_date|date:'d-m-Y' }}</td>
+                                    <td style="min-width: 8vw;">{{ record.exit_date|date:'d-m-Y' }}</td>
+                                    <td >{{ record.price_man }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% include 'pagination.html' %}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+{% endblock %}
+
+{% block additional_script %}
+    <script src={% static 'js/search_utils.js' %}></script>
+{% endblock %}

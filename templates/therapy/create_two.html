@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+
+{% block content %}
+
+    {% if object.patient_id %}
+    <p class="h5 text-primary"> {% trans "Терапия" %} (
+        <a class="h5 link-primary" href="{% url 'patients:patient_edit' object.patient_id %}">
+            {% trans "Пациент" %}: {{ object.patient }}
+        </a>)
+    </p>
+    {% endif %}
+    <form method="post" >
+    {% if not error is None %}
+        <p class="text-danger">{% trans "Ошибка" %}: {{ error|default_if_none:'' }} </p>
+    {% endif %}
+        {% crispy form %}
+    </form>
+
+{% endblock %}

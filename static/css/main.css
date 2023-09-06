@@ -1,0 +1,234 @@
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*text-align: center;*/
+  width: 100%;
+}
+
+.top-line {
+  display: flex;
+  position: absolute;
+  left: 0; top: 0; right: 0;
+  height: 10%;
+  background-color: blue;
+}
+
+.middle-line {
+  display: flex;
+  position: absolute;
+  left: 0; top: 10%; right: 0;
+  height: 80%;
+  background-color: gray;
+}
+.bottom-line {
+  display: flex;
+  position: absolute;
+  left: 0; top: 90%; right: 0;
+  height: 10%;
+  background-color: green;
+}
+
+.outer-line {
+  display: flex;
+  /*height: 200px;*/
+  padding: 5px;
+  vertical-align: bottom;
+  align-items: center;
+}
+.inner-line {
+  margin: auto;
+  vertical-align: bottom;
+}
+
+.menu-font {
+  color: #c5e8ef;
+  font-weight: bold;
+}
+
+.nav-item {
+  color: #c5e8ef;
+  font-weight: bold;
+  padding-left: 1.0vw;
+  padding-right: 1.0vw;
+}
+
+.nav-link {
+  /*color: #c5e8ef;*/
+  color: #e3f2f5;
+  font-size: larger;
+  vertical-align: center;
+  text-align: center;
+
+}
+.active {
+  background-color: #8bb9fe;
+
+  /*color: #997404;*/
+  color: #c5e8ef;
+  border: #0dcaf0;
+  /*height: 5.0vh;*/
+  padding-left: 1.0vw;
+  padding-right: 1.0vw;
+  text-align: center;
+}
+
+.tab-content .active {
+    all: initial;
+}
+
+.nav-tabs {
+    --bs-nav-tabs-border-width: initial;
+    --bs-nav-tabs-border-color: initial;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #8bb9fe;
+    color: #c5e8ef;
+}
+
+.nav-tabs .nav-link {
+    /*background-color: #8bb9fe;*/
+    color: #8bb9fe;
+}
+
+
+.navbar {
+  --bs-navbar-padding-y: 0.0rem;
+  --bs-navbar-brand-padding-y: 0.0rem;
+  /*height: 5.0vh;*/
+}
+
+.navbar-nav {
+    --bs-nav-link-hover-color: #234d8b;
+}
+
+.btn-primary {
+    --bs-btn-bg: #8bb9fe;
+    --bs-btn-border-color: #8bb9fe;
+}
+
+.bg-menu {
+  background-color: #6ea8fe;
+}
+
+.copyright-text {
+  /*text-transform: uppercase;*/
+  text-align: center;
+}
+
+
+/*вкладки в форме*/
+
+.tab {
+    overflow: hidden;
+    /*border: 1px solid #ccc;*/
+    /*background-color: #f1f1f1;*/
+}
+
+.tablinks {
+    text-align: center;
+    align-self: center;
+}
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: inside;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    text-align: center;
+    align-content: center;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #6ea8fe;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    /*border: 1px solid #ccc;*/
+    /*border-top: none;*/
+}
+
+.nav-tabs .nav-link {
+    border-bottom-left-radius: var(--bs-nav-tabs-border-radius);
+    border-bottom-right-radius: var(--bs-nav-tabs-border-radius);
+}
+
+.form-group {
+    padding-top: 3vh;,
+}
+.text-input {
+    width: 30em;
+}
+
+table th {
+  vertical-align: top !important;
+  text-align: center !important;
+}
+
+.form {
+    padding-top: 2vh;
+    margin-top: 4vh;
+}
+
+nav > ul {
+ display: flex;
+ margin: 1em;
+ width: 100%;
+
+ height: 25px;
+}
+
+li > ul{
+ top: 40px;
+ visibility: hidden;
+ opacity: 0;
+ transition: 400ms;
+
+ /*display: none;*/
+ position: absolute;
+ padding: 1em;
+}
+
+li:hover > ul{
+ visibility: visible;
+ opacity: 1;
+ /*display: block;*/
+ z-index: 999999;
+ background-color: rgba(110, 168, 254, 0.8);
+ align-items: flex-start;
+ list-style-type: None;
+}
+
+.nav-link {
+    text-align: start;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.disabled-control {
+    cursor: not-allowed;
+}
+
+/*.pointer:hover {*/
+/*    background-color: #eeeeea;*/
+/*}*/
+/*.table tbody tr:hover td, .table tbody tr:hover th {*/
+/*    background-color: #eeeeea;*/
+/*}*/
+

@@ -1,0 +1,82 @@
+{% load i18n %}
+{% if surgery_list %}
+<div class="container " style="padding-top: 2vh">
+
+    <div class="table">
+
+        <div class="row">
+            <div class="col">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="h5 text-primary"> {% trans "Операции" %} </h5>
+                    </div>
+                    <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table ">
+                            <thead>
+                                <tr>
+                                    <th scope="col">{% trans "Добавлено" %}</th>
+                                    <th scope="col">{% trans "Диагноз" %}</th>
+                                    <th scope="col">{% trans "Больница, проводящая лечение" %}</th>
+                                    <th scope="col">{% trans "Дата госпитализации" %}</th>
+                                    <th scope="col">{% trans "Больница и отделение, где проводится операция" %}</th>
+                                    <th scope="col">{% trans "Дата операции" %}</th>
+                                    <th scope="col">{% trans "Дата выписки из стационара" %}</th>
+                                    <th scope="col">{% trans "Оперировавший врач" %}</th>
+                                    <th scope="col">{% trans "Анестезиолог" %}</th>
+                                    <th scope="col">{% trans "Медсестра" %}</th>
+                                    <th scope="col">{% trans "Используемые медикаменты" %}</th>
+                                    <th scope="col">{% trans "Стоимость лечения" %}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for record in surgery_list %}
+                                <tr>
+                                    <td ><a href="{% url 'surgery:surgery_edit' record.id %}">
+                                            {{ record.created_at|date:'d-m-Y H:i' }}
+                                        </a>
+                                    </td>
+                                    <td style="min-width: 20vw;">{{ record.diagnosis|truncatechars:100|default_if_none:'' }}</td>
+                                    <td >{{ record.hospital_therapy|default_if_none:'' }}</td>
+                                    <td >{{ record.income_date|date:'d-m-Y' }}</td>
+                                    <td >
+                                        {{ record.hospital_surgery|default_if_none:'' }},
+                                        {{ record.department_surgery|default_if_none:'' }}
+                                    </td>
+                                    <td >{{ record.surgery_date|date:'d-m-Y' }}</td>
+                                    <td >{{ record.exit_date|date:'d-m-Y' }}</td>
+                                    <td >{{ record.doctor_surgery|default_if_none:'' }}</td>
+                                    <td >{{ record.doctor_anestesia|default_if_none:'' }}</td>
+                                    <td >{{ record.nurse|default_if_none:'' }}</td>
+                                    <td style="min-width: 15vw;">{{ record.medicine_description|truncatechars:100|default_if_none:'' }}</td>
+                                    <td >{{ record.price_man }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                        {% if is_paginated %}
+                            <div class="pagination justify-content-center">
+                                <span class="page-link">
+                                    {% if page_obj.has_previous %}
+                                        <a href="{% url 'surgery:surgery_list' %}?page={{ page_obj.previous_page_number }}"> {% trans "Предыдущая" %} </a>
+                                    {% endif %}
+                                    <span class="text-black-50">
+                                        <span style="padding: 1em">{{ page_obj.number }}</span>
+                                    </span>
+                                    {% if page_obj.has_next %}
+                                        <a href="{% url 'surgery:surgery_list' %}?page={{ page_obj.next_page_number }}"> {% trans "Следующая" %} </a>
+                                    {% endif %}
+                                </span>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endif %}

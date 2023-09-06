@@ -1,0 +1,18 @@
+{% load i18n %}
+{% if is_paginated %}
+    <div class="pagination justify-content-center">
+        <span class="page-link">
+            {% if page_obj.has_previous %}
+                <a href="{{ request.path }}?page={{ page_obj.previous_page_number }}"> {% trans "Предыдущая" %} </a>
+{#                <a href="{% url url_list %}?page={{ page_obj.previous_page_number }}"> {% trans "Предыдущая" %} </a>#}
+            {% endif %}
+            <span class="text-black-50">
+                <span style="padding: 1em">{{ page_obj.number }}</span>
+            </span>
+            {% if page_obj.has_next %}
+                <a href="{{ request.path }}?page={{ page_obj.next_page_number }}"> {% trans "Следующая" %} </a>
+{#                <a href="{% url url_list %}?page={{ page_obj.next_page_number }}"> {% trans "Следующая" %} </a>#}
+            {% endif %}
+        </span>
+    </div>
+{% endif %}
